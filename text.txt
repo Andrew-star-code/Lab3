@@ -1,1 +1,1 @@
-All Python releases are Open Source. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions.
+Итак, мой вопрос: действительно ли больно их использовать или это просто плохой стиль? So my question is: Does it actually hurt to use them or is it just bad style?
