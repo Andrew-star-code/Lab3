@@ -11,13 +11,17 @@ try:
         if not buffer:                       
             print ("\nФайл text.txt в директории проекта пустой.\nДобавьте не пустой файл в директорию или переименуйте существующий *.txt файл.")
         while buffer:
-            work_buffer += buffer
+
+
             if buffer.find(".") >= 0 or buffer.find("!") >= 0 or buffer.find("?") >= 0:
                 a = work_buffer
                 b = a.split()
                 for j in reversed (b):
                     print(j, end = " ")
                     work_buffer = ""
+                print(buffer, end = " ")
+            else:
+                work_buffer += buffer
             buffer = file.read(buffer_len)
             if len(work_buffer) >= max_buffer_len and buffer.find(".") < 0 and buffer.find("!") < 0 and buffer.find("?") < 0:
                 print ("\nФайл text.txt не содержит знаков окончания предложения и максимальный размер буфера превышен.\nОткорректируйте файл text.txt в директории или переименуйте существующий *.txt файл.")
